@@ -1,33 +1,108 @@
-HELP.md
+# ---------------------
+# Build & Dependency Tools
+# ---------------------
+# Maven
 target/
 !.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+mvnw
+mvnw.cmd
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
+# Gradle (if used)
+.gradle/
+build/
+!.gradle/*.gradle
+!.gradle/*.gradle.kts
 
-### IntelliJ IDEA ###
-.idea
-*.iws
+# ---------------------
+# IDE & Editor
+# ---------------------
+# IntelliJ IDEA
+.idea/
 *.iml
 *.ipr
+*.iws
+out/
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
+# Eclipse
+.classpath
+.project
+.settings/
+.metadata/
 
-### VS Code ###
+# VS Code
 .vscode/
+*.code-workspace
+
+# NetBeans
+nbproject/
+nbdist/
+
+# ---------------------
+# Logs & Temp Files
+# ---------------------
+logs/
+*.log
+*.tmp
+temp/
+*.swp
+*.swo
+*.pid
+
+# ---------------------
+# OS-Specific
+# ---------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------------------
+# Environment & Secrets
+# ---------------------
+# Local configuration files (keep templates instead)
+src/main/resources/application-local.properties
+src/main/resources/application-local.yml
+.env
+.env.local
+*.env
+
+# ---------------------
+# Dependencies
+# ---------------------
+# Node.js (if using a frontend)
+node_modules/
+npm-debug.log
+yarn-error.log
+dist/
+
+# ---------------------
+# Tests & Reports
+# ---------------------
+# Test outputs
+target/surefire-reports/
+target/test-results/
+target/failsafe-reports/
+coverage/
+jacoco.exec
+
+# ---------------------
+# Database
+# ---------------------
+# Embedded databases (e.g., H2, Derby)
+*.h2.db
+*.mv.db
+*.script
+derby.log
+
+# ---------------------
+# Spring Boot Specific
+# ---------------------
+# Generated files
+**/target/generated-sources/
+**/target/classes/
+
+# ---------------------
+# Docker
+# ---------------------
+Dockerfile.build
+docker-compose.override.yml
+.dockerignore
